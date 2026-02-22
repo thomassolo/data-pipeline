@@ -6,7 +6,7 @@ from confluent_kafka import Producer
 
 API_KEY = "d5qje41r01qhn30g37o0d5qje41r01qhn30g37og"
 BASE_URL = "https://finnhub.io/api/v1/quote"
-SYMBOLS = ["AAPL", "MSFT", "TSLA", "GOOGL", "AMZN"]
+SYMBOLS = ["MSFT", "TSLA", "GOOGL", "AMZN", "TTWO", "SPY", "BTC", "QQQ", "GLD"]
 bootstrap_servers = 'localhost:29092'
 topic = "finance_quotes"
 producer = Producer({"bootstrap.servers": bootstrap_servers})
